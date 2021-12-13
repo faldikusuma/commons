@@ -1,0 +1,16 @@
+{
+  "name": "faldikusuma/common",
+  "description": "common share dependecies for microservices",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "faldi kusuma",
+      "email": "faldi.kusuma.pn@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "laravel/framework": "^8.0"
+  }
+}
