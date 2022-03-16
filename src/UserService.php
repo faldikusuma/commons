@@ -1,7 +1,8 @@
 <?php
 
 namespace Microservices;
-
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Gate;
 class UserService {
    
     private $endpoint;
