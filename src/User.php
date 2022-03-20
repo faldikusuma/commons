@@ -26,7 +26,7 @@ class User
         $this->first_name = $json['first_name'];
         $this->last_name = $json['last_name'];
         $this->email = $json['email'];
-        $this->is_influencer = $json['is_influencer'];
+        $this->is_influencer = $json['is_influencer'] ?? 0;
     }
 
   
