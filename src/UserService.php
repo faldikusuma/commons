@@ -59,21 +59,21 @@ class UserService {
     {
         $json = $this->request()->get("{$this->endpoint}/users/{$id}")->json();
 
-        return new User($json);;
+        return new User($json);
     }
 
     public function create($data)
     {
         $json = $this->request()->post("{$this->endpoint}/users",$data)->json();
 
-        return new User($json);;
+        return new User($json);
     }
 
     public function update($id,$data)
     {
         $json = $this->request()->put("{$this->endpoint}/users/{$id}",$data)->json();
 
-        return new User($json);;
+        return new User($json);
     }
 
     public function delete($id)
