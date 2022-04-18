@@ -59,7 +59,10 @@ class UserService {
     {
         $json = $this->request()->get("{$this->endpoint}/users/{$id}")->json();
 
-        return new User($json);
+        if (isset($json)) {
+            return new User($json);
+        }
+       
     }
 
     public function create($data)
@@ -72,9 +75,7 @@ class UserService {
     public function update($id,$data)
     {
         $json = $this->request()->put("{$this->endpoint}/users/{$id}",$data)->json();
-        if (isset($json)) {
-            return new User($json);
-        }
+        return new User($json);
        
     }
 
